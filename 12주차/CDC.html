@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+   <style media="screen">
+     *{
+       padding:0;
+       margin:0;
+     }
+     .clear{
+       clear:both;
+     }
+     li{
+       list-style-type: none;
+     }
+     #page{
+       width:1300px;
+       margin: auto;/*폭 초기화. 가운데정렬됨*/
+       border: 0px solid #bbbbbb;
+     }
+    /*위의 4개의 소스는 초기화작업*/
+    #cdc{
+   background-color: white;
+   border: 0px solid purple;
+   border-radius: 10px;
+   display: inline-block;
+   font: inherit;
+   padding-left: 12px;
+    }
+    header{
+      width:1300px;
+      height: 100px;
+      margin-top: 10px;
+      border: 0px solid #bbbbbb;
+    }
+    #logo{
+      float: left;
+      margin-top: 10px;
+      padding-left: 5px;
+    }
+    #top{
+      float:right;
+      margin:30px 20px 0 0;/*북동남서*/
+    }
+    nav{
+      width:1300px;
+      height:70px;
+      margin-top:10px;
+      border: 0px solid #bbbbbb;
+    }
+    nav li{
+      display:inline-block;
+      margin: 20px 27px;
+      font-size:18px;
+    }
+    #bet{
+      text-align: right;
+      padding: 25px 20px 10px 0px;
+    }
+    section{
+      width:950px;
+      float:right;
+      border: 0px solid gray;
+    }
+    section h1{
+      padding:10px 0px 10px 15px;
+    }
+    section #desc{
+      text-align: center;
+    }
+    #sec1{
+      float: right;
+    }
+    #secpic{
+      float:left;
+      margin:20px;
+    }
+    #secdesc{
+      margin:20px;
+      color:gray;
+      padding: 75px 0px 0px 0px;
+    }
+    aside{
+      width:300px;
+      float:left;
+      border: 0px solid gray;
+    }
+    #current{
+      color:      #00a28b;
+    }
+    aside .asm1{
+      font-size: 25px;
+      padding: 0px 0px 14px 7px;
+      color: gray;
+    }
+    aside .as1{
+      color: #ffffff;
+      width:300px;
+      padding: 10px 0px 10px 5px;
+      border: 0px solid gray;
+      background-color: #00a28b;
+    }
+    aside #as2{
+      width:300px;
+      padding: 10px 0px 10px 5px;
+      background-color: #f5f6fa;
+    }
+    aside #as2 li{
+      padding: 5px 0px 5px 5px;
+    }
+    aside .as3{
+      width:300px;
+      padding:10px 0px 10px 5px;
+      border-bottom: 1px solid gray;
+    }
+    aside .as4{
+      width:300px;
+      padding:10px 0px 10px 5px;
+      border-bottom: 1px solid gray;
+    }
+    aside .as5{
+      width:300px;
+      padding:10px 0px 10px 5px;
+      border-bottom: 1px solid gray;
+    }
+    .ul1 li{
+      display:inline-block;
+      width:447px;
+      height:40px;
+      border:1px solid black;
+      text-align:center;
+      padding-top:7px;
+
+      font-size:17px;
+      margin-top:30px;
+      margin-left:15px;
+    }
+    .ul2 li{
+      display:inline-block;
+      width:447px;
+      height:40px;
+      border:1px solid black;
+      text-align:center;
+      padding-top:7px;
+
+      font-size:17px;
+      margin-top:10px;
+      margin-left:15px;
+    }
+    .ul3 li{
+      display:inline-block;
+      width:447px;
+      height:40px;
+      border:1px solid black;
+      text-align:center;
+      padding-top:7px;
+
+      font-size:17px;
+      margin: 10px 0px 30px 15px;
+
+    }
+
+    footer .foot1 li{
+      display:inline-block;
+      padding: 15px 3px 15px 3px;
+    }
+    footer #link{
+      font-size: 18px;
+    }
+
+    footer .foot2l li{
+      display:inline-block;
+      float: left;
+    }
+    footer .foot2r li{
+      display:inline-block;
+      float: right;
+    }
+    select{
+      width:190px;
+      height:30px;
+    }
+    footer{
+        background-color: #f5f6fa;
+    }
+    .foot2l li{
+      padding: 15px 10px 15px 10px;
+
+    }
+    .foot2r li{
+      padding: 15px 4px 15px 4px;
+      font-size: 12px;
+
+    }
+    #foot3l{
+      font-size: 13px;
+      margin-bottom: 7px;
+    }
+    .f3l{
+      float: left;
+    }
+    .foot3r{
+      background-color: #f5f6fa;
+    }
+    .foot3r li{
+      display: inline-block;
+      width:80px;
+      height:50px;
+
+      padding-left: 30px;
+    }
+    .rightarrow{
+      float:right;
+      padding-right: 13px;
+    }
+    #seclist .seclisttext{
+      text-decoration: underline;
+    }
+    a{
+      text-decoration: none;
+      color:black;
+    }
+    #mypage{
+      color:skyblue;
+    }
+   </style>
+  <body id="page">
+    <header>
+      <div id="logo">
+      <img src="../img/logo.JPG">
+      </div>
+      <div id="top">
+        로그인 | 회원가입 | <a id="mypage" href="웹프중간과제.html" target="_blank">마이페이지</a> | 고객센터
+      </div>
+    </header>
+    <hr>
+    <div class="clear"></div>
+    <nav>
+      <ul>
+        <li> 감염병 </li>
+        <li> 건강정책 </li>
+        <li> 정책정보 </li>
+        <li> 연구개발 </li>
+        <li> 알림자료 </li>
+        <li> 간행물 통계 </li>
+        <li> 민원정보공개 </li>
+        <li> 기관소개 </li>
+        <li> 사업별홈페이지 </li>
+      </ul>
+    </nav>
+    <hr>
+    <div class="clear"></div>
+    <p id="bet">연구개발 > 질병연구 > <span style="color:#00a28b;"><b>질병연구</b></span></p>
+    <section>
+     <h1>질병연구</h1>
+     <hr>
+     <div id="secpic">
+       <img src="11.JPG" width=250 height=250>
+     </div>
+     <div id="secdesc">
+       <b>감염병과 만성병의 기전과 예방·치료·관리에 관한 연구와 환경과 유전 요인에 대한
+       분석연구를 바탕으로 국민 건강을 지킬 과학적 근거와 수단을 마련합니다.
+       또한, 국가 보건의료 연구 인프라를 구축·운영을 통해 연구자원과 정보를 제공하여 질병극복과
+       보건의료의 발전의 기반을 마련하고 있습니다.</b>
+     </div>
+     <div class="clear"></div>
+     <hr>
+     <div id="seclist">
+     <ul class="ul1">
+       <li><a href="http://www.cdc.go.kr/contents.es?mid=a40501010000" target="_blank"><span class="seclisttext">감염병연구</span> &gt;</a></li>
+       <li><a href="http://www.cdc.go.kr/contents.es?mid=a40502010100" target="_blank"><span class="seclisttext">만성질환</span> &gt;</a></li>
+     </ul>
+     <ul class="ul2">
+       <li><a href="http://www.cdc.go.kr/contents.es?mid=a40503010000" target="_blank"><span class="seclisttext">유전체연구</span> &gt;</a></li>
+       <li><a href="http://www.cdc.go.kr/contents.es?mid=a40504010000" target="_blank"><span class="seclisttext">한국인유전체역학조사사업</span> &gt;</a></li>
+     </ul>
+     <ul class="ul3">
+       <li><a href="http://www.cdc.go.kr/contents.es?mid=a40505010100" target="_blank"><span class="seclisttext">생명정보연구</span> &gt;</a></li>
+     </ul>
+   </div>
+    </section>
+    <aside>
+      <div class="asm1">
+      <b>연구개발</b>
+      </div>
+      <div class="as1">
+      <b>&nbsp;질병연구</b>
+      </div>
+      <div id="as2">
+        <ul>
+          <li><b> &centerdot;&nbsp;<a href="http://www.cdc.go.kr/contents.es?mid=a20401060000" target="_blank"><span id="current">질병연구</span> -</a></b></li>
+          <li> &centerdot;&nbsp;<a href="http://www.cdc.go.kr/contents.es?mid=a20401070100" target="_blank">범부처감염병대응R&D</a></li>
+          <li> &centerdot;&nbsp;<a href="http://www.cdc.go.kr/contents.es?mid=a20401080000" target="_blank">수시기술수요조사</a></li>
+        </ul>
+      </div>
+      <div class="as3">
+        <a href="https://www.cdc.go.kr/board/board.es?mid=a40801000000&bid=0050" target="_blank">연구성과
+        <span class="rightarrow">&rightarrow;</a></span>
+      </div>
+      <div class="as4">
+        <a href="http://www.cdc.go.kr/contents.es?mid=a40401010000" target="_blank">연구자원인프라<span class="rightarrow">&rightarrow;</a></span>
+      </div>
+      <div class="as5">
+        <a href="http://www.nih.go.kr/" target="_blank">국립보건연구원 바로가기<span class="rightarrow">&rightarrow;</a></span>
+      </div>
+    </aside>
+    <div class="clear"></div>
+    <hr>
+    <footer>
+      <ul class="foot1">
+        <li id="link"><strong>관련링크</strong> &nbsp;< &nbsp;></li>
+        <li>임상진료지침 디지털 가이드라인</li>
+        <li>KoGES</li>
+        <li>질병관리본부국제학술지(Osong PHRP)</li>
+        <li>만성신장병코호트연구</li>
+        <li>국민건강영양조사</li>
+        <li>국립의과학지식센터</li>
+        <li>보건복지통계</li>
+      </ul>
+      <ul class="foot2l">
+        <li>이용안내</li>
+        <li>개인정보처리방침</li>
+        <li>웹접근성품질인증</li>
+        <li>저작권정책</li>
+      </ul>
+      <ul class="foot2r">
+        <li>
+          <select id="cdc" name="cdc">
+              <option value="보건복지부 산하기관">보건복지부 산하기관</option>
+              <option value="한국국제보건의료재단">한국국제보건의료재단</option>
+              <option value="한국사회복지협의회">한국사회복지협의회</option>
+              <option value="국립중앙의료원">국립중앙의료원</option>
+              <option value="국립암센터">국립암센터</option>
+              <option value="대한적십자사">대한적십자사</option>
+              <option value="한국보건의료원구원">한국보건의료원구원</option>
+              <option value="한국장애인재활협회">한국장애인재활협회</option>
+          </select>
+        </li>
+        <li>
+          <select id="cdc" name="cdc">
+            <option value="보건복지부 및 소속기관">보건복지부 및 소속기관</option>
+            <option value="보건복지부">보건복지부</option>
+            <option value="국립보건연구원">국립보건연구원</option>
+            <option value="국립검역소">국립검역소</option>
+            <option value="국립건강정신센터">국립건강정신센터</option>
+            <option value="국립나주병원">국립나주병원</option>
+            <option value="국립재활원">국립재활원</option>
+            <option value="오송생명과학단지지원센터">오송생명과학단지지원센터</option>
+          </select>
+        </li>
+        <li>
+            <select id="cdc" name="cdc">
+              <option value="보건환경연구원">보건환경연구원</option>
+              <option value="서울특별시 보건환경연구원">서울특별시 보건환경연구원</option>
+              <option value="부산광역시 보건환경연구원">부산광역시 보건환경연구원</option>
+              <option value="대구광역시 보건환경연구원">대구광역시 보건환경연구원</option>
+              <option value="인천광역시 보건환경연구원">인천광역시 보건환경연구원</option>
+              <option value="광주광역시 보건환경연구원">광주광역시 보건환경연구원</option>
+              <option value="대전광역시 보건환경연구원">대전광역시 보건환경연구원</option>
+              <option value="울산광역시 보건환경연구원">울산광역시 보건환경연구원</option>
+              <option value="강원도 보건환경연구원">강원도 보건환경연구원</option>
+              <option value="경기도 보건환경연구원">경기도 보건환경연구원</option>
+            </select>
+        </li>
+          <li>
+            <select id="cdc" name="cdc">
+              <option value="질병관리본부 관련기관">질병관리본부 관련기관</a></option>
+              <option value="미국질병통제예방센터[CDC]">미국질병통제예방센터[CDC]</option>
+              <option value="유럽질병통제예방센터[ECDC]">유럽질병통제예방센터[ECDC]</option>
+              <option value="세계보건기구[WHO]">세계보건기구[WHO]</option>
+              <option value="일본감염병연구소[NIID]">일본감염병연구소[NIID]</option>
+              <option value="영국공공보건국[PHE]">영국공공보건국[PHE]</option>
+            </select>
+          </li>
+      </ul>
+      <div class="clear">  </div>
+      <div class="f3l">
+      <p id="foot3l">(28159) 충북 청주시 흥덕구 오송읍 오송생명2로 187 오송보건의료행정타운내 질병관리본부 &phone;1339</p>
+      COPYRIGHT &COPY; 2019 질병관리본부 ALL RIGHTS RESERVED.
+      </div>
+      <div class="foot3r">
+        <ul>
+          <li><img src="5.JPG"></li>
+          <li><img src="6.JPG"></li>
+          <li><img src="7.JPG"></li>
+          <li><img src="8.JPG"></li>
+          <li><img src="9.JPG"></li>
+          <li><img src="10.JPG"></li>
+        </ul>
+      </div>
+
+
+  </footer>
+
+
+
+  </body>
+</html>
